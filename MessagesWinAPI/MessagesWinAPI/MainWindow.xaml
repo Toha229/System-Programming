@@ -1,0 +1,25 @@
+﻿<Window x:Class="MessagesWinAPI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MessagesWinAPI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Margin="3">
+            <Label Name="windowInfo" FontSize="20" DockPanel.Dock="Bottom" HorizontalAlignment="Center">Input window name</Label>
+            <TextBox Name="windowName" FontSize="30" HorizontalContentAlignment="Center"></TextBox>
+        </DockPanel>
+        <UniformGrid Grid.Row="1">
+            <Button Margin="10" FontSize="20" Click ="Find_Click">Find window</Button>
+            <Button Margin="10" FontSize="20" Click ="Change_Click">Change name</Button>
+            <Button Margin="10" FontSize="20" Click ="Close_Click">Close window</Button>
+            <Button Margin="10" FontSize="20" Click ="Sound_Click">Make sound</Button>
+        </UniformGrid>
+    </Grid>
+</Window>
